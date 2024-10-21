@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu et Ma Situation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <header>
+    <div class="navbar">
+      <div class="logo">CAREINVEST</div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Icône du menu -->
+    </div>
+  </header>
+
+  <!-- Menu déroulant -->
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a href="#" id="ma-situation-link">MA SITUATION</a></li>
+      <li><a href="#">MON PROJET</a></li>
+      <li><a href="#">MES SIMULATEURS</a></li>
+      <li><a href="#">MON HISTORIQUE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu de MA SITUATION (caché par défaut) -->
+  <section id="situation-section" class="situation-section" style="display: none;">
+    <!-- Flèche de retour au menu -->
+    <div class="back-arrow-wrapper">
+      <div class="back-arrow" id="back-arrow">&larr;</div>
+    </div>
+    
+    <!-- Titre MA SITUATION avec encadrement blanc -->
+    <div class="situation-title-wrapper">
+      <h1 class="situation-title">MA SITUATION</h1>
+    </div>
+    
+    <!-- Liste des situations -->
+    <ul id="situation-list">
+      <!-- Les situations créées s'ajouteront ici -->
+    </ul>
+
+    <!-- Bouton pour ajouter une nouvelle situation -->
+    <div class="new-situation">
+      <div class="new-situation-wrapper">
+        <p id="new-situation-text">Créer une nouvelle situation......</p>
+      </div>
+      <div id="add-situation-btn" class="add-icon">
+        <img src="Add User.png" alt="Créer une nouvelle situation" width="50">
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

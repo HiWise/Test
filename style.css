@@ -1,0 +1,172 @@
+/* Style de base */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f8f6; /* Blanc cassé/beige */
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Menu déroulant */
+.menu {
+  display: none;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* Flèche de retour */
+.back-arrow-wrapper {
+  text-align: left; /* Aligner la flèche à gauche */
+  padding: 15px 0 0 15px;
+}
+
+.back-arrow {
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.back-arrow:hover {
+  color: #888;
+}
+
+/* Contenu de MA SITUATION */
+.situation-section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titre MA SITUATION */
+.situation-title-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Prendre toute la largeur */
+}
+
+.situation-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Liste des situations */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Prendre toute la largeur */
+}
+
+/* Bouton pour ajouter une nouvelle situation */
+.new-situation {
+  margin-top: 20px;
+}
+
+.new-situation-wrapper {
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Prendre toute la largeur */
+}
+
+#new-situation-text {
+  color: grey;
+  font-size: 16px;
+  margin: 0;
+}
+
+.add-icon {
+  margin-top: 10px; /* Mettre un espace sous le texte */
+  cursor: pointer;
+  display: inline-block;
+}
+
+.add-icon img {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  /* Menu pour Desktop */
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .menu li a {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  /* Style pour MA SITUATION sur Desktop */
+  ul li {
+    font-size: 20px;
+  }
+
+  .add-icon img {
+    width: 60px;
+  }
+}
